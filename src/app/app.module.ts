@@ -10,8 +10,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { DigitalWatchComponent } from './shared/components/digital-watch/digital-watch.component'
 import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { StopWatchPageComponent } from './stop-watch-page/stop-watch-page.component';
 import { TimeZonePageComponent } from './time-zone-page/time-zone-page.component';
