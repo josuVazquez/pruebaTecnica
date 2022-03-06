@@ -15,7 +15,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { StopWatchPageComponent } from './stop-watch-page/stop-watch-page.component';
 import { TimeZonePageComponent } from './time-zone-page/time-zone-page.component';
-import { CoreModule } from './core/core.module';
+import { CoreModule } from '@core/core.module';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { TimestampApiService } from '../core/services/timestamp-api.service';
+import { TimestampApiService } from '@shared/services/timestamp-api.service';
 
 @Component({
   selector: 'app-time-zone-page',

@@ -1,14 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
+import { environment } from '@environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TimestampApiService {
-  // api = 'http://worldtimeapi.org/api';
-
   constructor(private httpClient: HttpClient) { }
 
   getTimeZone(): Observable<any> {

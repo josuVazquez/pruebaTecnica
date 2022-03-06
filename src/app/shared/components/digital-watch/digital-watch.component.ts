@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { TimestampApiService } from '../../../core/services/timestamp-api.service';
+import { TimestampApiService } from '@shared/services/timestamp-api.service';
 
 @Component({
   selector: 'app-digital-watch',
