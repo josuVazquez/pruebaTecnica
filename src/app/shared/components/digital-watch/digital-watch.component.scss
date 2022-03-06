@@ -1,0 +1,62 @@
+@import "~src/app/utils/mixin";
+@import "~src/app/utils/theme";
+
+:host {
+    @include small {
+        flex: 1 0 100%;
+    }
+}
+
+.zoneName {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.digitalWatch {
+    font-size: xx-large;
+    border: 12px solid $primary-color;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding: {
+        bottom: 4px;
+        right: 4px;
+        left: 4px;
+        top: 8px;
+    };
+    p {
+        margin-bottom: 4px;
+    }
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    gap: 4px;
+
+}
+
+.separation {
+    margin: 4px;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+
+    .seconds {
+        font-size: medium;
+    }
+}

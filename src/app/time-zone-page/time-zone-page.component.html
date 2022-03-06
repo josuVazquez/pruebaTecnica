@@ -1,0 +1,26 @@
+<div class="page">
+  <app-header>
+  </app-header>
+  <div class="content">
+    <mat-form-field class="select">
+      <mat-select placeholder="Select Dates to display" [multiple]="true" [formControl]="multiSelect" (selectionChange)="selectChange()">
+        <mat-option disabled="true" class="disableCheck" value="option">
+          <mat-form-field >
+            <input matInput (keyup)="onKey($event)" />
+            <mat-icon matPrefix>search</mat-icon>
+          </mat-form-field>
+        </mat-option>
+        
+        <mat-option *ngFor="let state of filteredStates" [value]="state"
+          [disabled]="selectedStates.length >= 4 && !alreadySelected(state)">
+        {{state}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="digital-list">
+      <app-digital-watch *ngFor="let state of selectedStates" [state]="state">
+      </app-digital-watch>
+    </div>
+  </div>
+</div>

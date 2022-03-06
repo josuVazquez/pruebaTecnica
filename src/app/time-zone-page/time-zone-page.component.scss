@@ -1,0 +1,42 @@
+@import "~src/app/utils/mixin";
+
+::ng-deep .disableCheck.mat-option:first-child .mat-pseudo-checkbox{ display: none; }
+::ng-deep .cdk-overlay-pane { min-width: auto !important; }
+
+.disableCheck {
+    padding-top: 10px;
+}
+
+.select {
+    margin-top: 3rem;
+    width: 70%;
+}
+
+.digital-list {
+    margin-bottom: auto;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    gap: 5%
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}

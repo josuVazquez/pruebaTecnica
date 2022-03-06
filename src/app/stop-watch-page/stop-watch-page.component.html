@@ -1,0 +1,24 @@
+<div class="page">
+    <app-header>
+        
+    </app-header>
+    <div class="content">
+        <app-stop-watch (startStop)="startStop($event)">
+        </app-stop-watch>
+
+        <mat-list class="list">
+            <header class="header">
+                <span>List of Times</span>
+                <button mat-icon-button (click)="resetList()">
+                    <mat-icon>autorenew</mat-icon>
+                </button>
+            </header>
+            <hr/>
+
+            <mat-list-item *ngFor="let counter of counterList; let i = index">
+                <span>#{{i + 1}} {{counter.time | date:'HH:mm:ss.SSS'}}</span>
+                <span class="right">{{counter.event === 'stop' ? 'Start' : 'Stop'}}</span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container" *ngIf="$stateTime | async as stateTime">
+    <h3 class="zoneName">{{ stateTime.timezone }}</h3>
+    <div class="digitalWatch">
+        <div class="top">
+            <p>{{ stateTime.datetime | date:'HH:mm' :stateTime.utc_offset}}</p>
+            <p class="seconds">{{ stateTime.datetime | date:'ss' }}</p>
+        </div>
+        <hr class="separation"/>
+        <div class="bottom">
+            <p>{{ stateTime.datetime | date:'EE' }}</p>
+            <p>{{ stateTime.datetime | date:'dd/MM/YY' }}</p>
+        </div>
+    </div>
+</div>

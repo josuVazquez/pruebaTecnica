@@ -1,0 +1,13 @@
+<article class="spinner" [ngClass]="{'rotating': running}">
+    <div>{{ counter | date:'HH:mm:ss.SSS' }}</div>
+    <footer class="buttons">
+        <button mat-icon-button (click)="toggleTimer()">
+            <mat-icon>
+                {{iconText}}
+            </mat-icon>
+        </button>
+        <button mat-icon-button (click)="resetTimer()">
+            <mat-icon>autorenew</mat-icon>
+        </button>
+    </footer>
+</article>
