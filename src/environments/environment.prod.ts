@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backEndUrl: 'http://worldtimeapi.org/api'
+  backEndUrl: 'https://worldtimeapi.org/api'
 };
